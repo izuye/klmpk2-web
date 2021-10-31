@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!---->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- favico -->
+    <link rel="shortcut icon" href="https://res.cloudinary.com/izuye/image/upload/v1635379458/prakerin.izzdevs.tk/favicon_pc2sgm.png">
+
+    <title>Toko</title>
+</head>
+
+<body class="body">
+<!--Navbar nya-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <!-- Logonya -->
+            <img src="https://res.cloudinary.com/izuye/image/upload/v1635378523/prakerin.izzdevs.tk/logo_m1idjz.png" alt="" width="50" height="50" class="me-2">
+            <strong>Tokoko</strong>
+        </a>
+        <!---->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex ms-auto my-4 my-lg-0">
+                <input class="form-control me-2" type="search" placeholder="Cari produk..." aria-label="Search">
+                <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+                <!-- class="nav-link active" aria-current="page" -->
+                <!-- buat page active -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Keranjang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bantuan</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Daftar</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Masuk</a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!---->
+<!-- gambar carousel -->
+<div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="bu2tton" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/izuye/image/upload/v1635378523/prakerin.izzdevs.tk/img1_qx7m0m.png" class="d-block img-fluid" alt="...">
+                <div class="carousel-caption d-none img-fluid">
+                    <h5></h5>
+                    <p>Ini adalah slide pertama.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/izuye/image/upload/v1635378523/prakerin.izzdevs.tk/img2_q2lxci.png" class="d-block img-fluid" alt="...">
+                <div class="carousel-caption d-none img-fluid">
+                    <h5></h5>
+                    <p>Ini adalah slide kedua</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/izuye/image/upload/v1635378523/prakerin.izzdevs.tk/img3_pymery.png" class="d-block img-fluid" alt="...">
+                <div class="carousel-caption d-none img-fluid">
+                    <h5></h5>
+                    <p>Ini adalah slide ketiga</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+    </div>
+</div>
+<!-- carousel end -->
+
+<!-- Kategori -->
+<div class="container mt-5">
+    <div class="judul-kategori" style="background-color: #fff; padding: 5px 10px">
+        <h5 class="text-center" style="margin-top: 5px;">KATEGORI</h5>
+    </div>
+    <div class="row text-center row-container mt-2">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/laptop.html" class="text-decoration-none"><img src="assets/kategori/laptop.png" class="img-kategori mt-4">
+                <p class="mt-1">Aksesoris & Laptop</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/pc.html" class="text-decoration-none"><img src="assets/kategori/computer.png" class="img-kategori mt-4">
+                <p class="mt-1">Aksesoris & PC</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/elektronik.html" class="text-decoration-none"><img src="assets/kategori/elektronik.png" class="img-kategori mt-4">
+                <p class="mt-1">Elektronik</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/fotografi.html" class="text-decoration-none"><img src="assets/kategori/Fotografi.png" class="img-kategori mt-4">
+                <p class="mt-1">Fotografi</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/hp.html" class="text-decoration-none"><img src="assets/kategori/hp.png" class="img-kategori mt-4">
+                <p class="mt-1">Handphone</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/games.html" class="text-decoration-none"><img src="assets/kategori/games.png" class="img-kategori mt-4">
+                <p class="mt-1">Games</p></a>
+            </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/baju.html" class="text-decoration-none"><img src="assets/kategori/baju.png" class="img-kategori mt-4">
+                <p class="mt-1">Baju</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/celana.html" class="text-decoration-none"><img src="assets/kategori/celana.png" class="img-kategori mt-4">
+                <p class="mt-1">Celana</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/sepatu.html" class="text-decoration-none"><img src="assets/kategori/sepatu.png" class="img-kategori mt-4">
+                <p class="mt-1">Sepatu</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/tas.html" class="text-decoration-none"><img src="assets/kategori/tas.png" class="img-kategori mt-4">
+                <p class="mt-1">Tas</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/jamtangan.html" class="text-decoration-none"><img src="assets/kategori/jamtangan.png" class="img-kategori mt-4">
+                <p class="mt-1">Jam Tangan</p></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="menu-kategori">
+                <a href="kategori/otomotif.html" class="text-decoration-none"><img src="assets/kategori/otomotif.png" class="img-kategori mt-4">
+                <p class="mt-1">Otomotif</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--Kategori End-->
+
+<!-- Tampilan Produkk-->
+<div class="container mt-3">
+    <div class="judul-kategori" style="background-color: #fff; padding: 5px 10px">
+        <h5 class="text-center" style="margin-top: 5px;">PRODUK TERLARIS</h5>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+            <div class="card text-center">
+                <img src="assets/produk/pc/hset-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nexus Headset</h5>
+                    <div class="icon-bintang">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        </div>
+                    <p class="card-text mt-2">Rp 250.500</p>
+                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                <div class="card text-center">
+                    <img src="assets/produk/pc/hset-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Joyseus JM B3 HIFI</h5>
+                        <div class="icon-bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            </div>
+                        <p class="card-text mt-2">Rp 120.500</p>
+                        <a href="#" class="btn btn-dark d-grid">Beli</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                    <div class="card text-center">
+                        <img src="assets/produk/pc/hset-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Joyseus Headset</h5>
+                            <div class="icon-bintang">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                </div>
+                            <p class="card-text mt-2">Rp 159.000</p>
+                            <a href="#" class="btn btn-dark d-grid">Beli</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                        <div class="card text-center">
+                            <img src="assets/produk/pc/hset-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Joyseus JH01</h5>
+                                <div class="icon-bintang">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    </div>
+                                <p class="card-text mt-2">Rp 205.000</p>
+                                <a href="#" class="btn btn-dark d-grid">Beli</a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/hset-5.jpg" class="card-img-top" style="height: 163px" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Logitech G733</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 1.980.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/keyboard-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MSI Keyboard</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 185.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/keyboard-2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">NYK K01 RGB TKL Keyboard</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 185.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/keyboard-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">NYK K-02 Black Keyboard</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 140.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/mouse-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                    <h5 class="card-title">Joyseus MS-0002 Wireless</h5></div>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 85.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/mouse-2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                    <h5 class="card-title">Joyseus MS-0007 USB Wired </h5></div>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 85.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/laptop/laptop-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HP Pavilion Gaming 15 Laptop</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 10.999.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/laptop/laptop-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Asus vivobook M415UA</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 9.999.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/laptop/laptop-2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Asus X441 AMD4 4GB </h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 5.849.999.</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/vga-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MSI GeForce RTX 3090</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Terjual</p>
+                                    <a href="#" class="btn btn-dark d-grid">Habis</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/vga-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gigabyte GTX 1660 </h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Terjual</p>
+                                    <a href="#" class="btn btn-dark d-grid">Habis</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-6 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/produk/pc/vga-2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">GeForce RTX 1050 2GB</h5>
+                                    <div class="icon-bintang">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        </div>
+                                    <p class="card-text mt-2">Rp 3.420.000</p>
+                                    <a href="#" class="btn btn-dark d-grid">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                     </div>
+</div>
+<!--Produk end-->
+
+<!--footer-->
+<footer class="bg-light p-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-md-start text-center pt-2 pb-2">
+                <a href="" class="text-decoration-none"></a>
+                <img src="assets/logo.png" class="anim-icon" style="width: 60px;">
+            </a>
+            <span class="ps-2">Kelompok 2 | Created with Html & CSS with bootstrap</span>
+            </div>
+
+            <div class="col-md-6 text-end text-center pt-2 pb-2">
+                Source File:
+                <a href="https://github.com/" class="text-decoration-none">
+                <img src="assets/git.png" class="img-kategori ms-2" style="width: 35px;">
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- footer end-->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
